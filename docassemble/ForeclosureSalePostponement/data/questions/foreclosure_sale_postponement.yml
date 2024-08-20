@@ -406,7 +406,6 @@ columns:
 edit:
   - name.first
 confirm: True
-
 ---
 continue button field: drafter.revisit
 question: |
@@ -427,7 +426,6 @@ edit:
   - name.first
   - address.zip
 confirm: True
-
 ---
 continue button field: users.revisit
 question: |
@@ -445,7 +443,6 @@ columns:
 edit:
   - signature
 confirm: True
-
 ---
 id: download foreclosure_sale_postponement
 event: foreclosure_sale_postponement_download
