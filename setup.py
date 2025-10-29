@@ -1,6 +1,6 @@
 import os
 import sys
-from setuptools import setup, find_packages
+from setuptools import setup, find_namespace_packages
 from fnmatch import fnmatchcase
 from distutils.util import convert_path
 
@@ -50,12 +50,10 @@ setup(name='docassemble.ForeclosureSalePostponement',
       long_description_content_type='text/markdown',
       author='Minnesota Courts',
       author_email='alsauber@mnlegalservices.org',
-      license='The MIT License',
+      license='MIT',
       url='https://docassemble.org',
-      packages=find_packages(),
-      namespace_packages=['docassemble'],
-      install_requires=['docassemble.AssemblyLine>=2.26.0'],
+      packages=find_namespace_packages(),
+      install_requires=['docassemble.AssemblyLine @ git+https://github.com/SuffolkLITLab/docassemble-AssemblyLine.git@main'],
       zip_safe=False,
       package_data=find_package_data(where='docassemble/ForeclosureSalePostponement/', package='docassemble.ForeclosureSalePostponement'),
      )
-

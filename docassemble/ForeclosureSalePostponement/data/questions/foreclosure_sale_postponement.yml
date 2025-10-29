@@ -76,6 +76,7 @@ objects:
   - users: ALPeopleList.using(ask_number=True,target_number=1)
   - drafter: ALPeopleList.using(ask_number=True,target_number=1)
   - owner: ALPeopleList.using(there_are_any=True)
+  - al_logo: DAStaticFile.using(filename="MNfavicon-96x96.png", alt_text="LawHelpMN") 
 ---
 sections:
   - review_foreclosure_sale_postponement: Review your answers
@@ -406,7 +407,6 @@ columns:
 edit:
   - name.first
 confirm: True
-
 ---
 continue button field: drafter.revisit
 question: |
@@ -427,7 +427,6 @@ edit:
   - name.first
   - address.zip
 confirm: True
-
 ---
 continue button field: users.revisit
 question: |
@@ -445,7 +444,6 @@ columns:
 edit:
   - signature
 confirm: True
-
 ---
 id: download foreclosure_sale_postponement
 event: foreclosure_sale_postponement_download

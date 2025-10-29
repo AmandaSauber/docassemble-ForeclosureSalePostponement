@@ -1,0 +1,30 @@
+license = "MIT"
+license-files = [
+    "LICENSE",
+]
+
+[build-system]
+requires = [
+    "setuptools==80.9.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docassemble.ForeclosureSalePostponement"
+version = "1.0"
+description = "Foreclosure Sale Postponement"
+readme = "README.md"
+authors = [
+    { name = "Minnesota Courts", email = "alsauber@mnlegalservices.org" },
+]
+dependencies = [
+    "docassemble.AssemblyLine @ git+https://github.com/SuffolkLITLab/docassemble-AssemblyLine.git@main",
+]
+
+[project.urls]
+Homepage = "https://docassemble.org"
+
+[tool.setuptools.packages.find]
+where = [
+    ".",
+]
